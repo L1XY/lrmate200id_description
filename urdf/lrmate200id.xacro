@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+
+
+
+<robot name="lrmate200id" xmlns:xacro="http://wiki.ros.org/xacro">
+
+
+    <material name="color_fanuc_yellow">
+        <color rgba="0.96 0.76 0.13 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_white">
+        <color rgba="0.86 0.85 0.81 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_grey">
+        <color rgba="0.96 0.76 0.13 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_gray24">
+        <color rgba="0.24 0.24 0.24 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_gray28">
+        <color rgba="0.28 0.28 0.28 1.0"/>
+    </material>
+
+    <material name="color_fanuc_gray31">
+        <color rgba="0.31 0.31 0.31 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_gray40">
+        <color rgba="0.4 0.4 0.4 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_yellow1">
+        <color rgba="1.0 1.0 0 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_BAB0B0">
+        <color rgba="0.73 0.69 0.69 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_E6E6E6">
+        <color rgba="0.90 0.90 0.90 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_00FF73">
+        <color rgba="0 1 0.45 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_black">
+        <color rgba="0.15 0.15 0.15 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_greyish">
+        <color rgba="0.75 0.75 0.75 1.0"/>
+    </material>
+    
+    <material name="color_fanuc_green">
+        <color rgba="0 0.61 0.27 1.0"/>
+    </material>
+    
+
+
+    
+
+
+
+        <!-- links: main serial chain -->	
+
+
+        <link name="base_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/base_link.stl"/>
+                </geometry>
+                <material name="color_fanuc_gray28"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/base_link.stl"/>
+                </geometry>
+            </collision>
+        </link>
+		
+        <link name="link_1">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_1.stl"/>
+                </geometry>
+                <material name="color_fanuc_yellow"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_1.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <link name="link_2">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_2.stl"/>
+                </geometry>
+                <material name="color_fanuc_yellow"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_2.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+
+        <link name="link_3">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_3.stl"/>
+                </geometry>
+                <material name="color_fanuc_yellow"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_3.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <link name="link_4">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_4.stl"/>
+                </geometry>
+                <material name="color_fanuc_yellow"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_4.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <link name="link_5">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_5.stl"/>
+                </geometry>
+                <material name="color_fanuc_yellow"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_5.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <link name="link_6">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/visual/link_6.stl"/>
+                </geometry>
+                <material name="color_fanuc_black"/>
+            </visual>
+			
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://lrmate200id_description/meshes/collision/link_6.stl"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <!-- joints: main serial chain -->
+
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0 0 0.330" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="link_1" />
+        <axis xyz="0 0 1" />
+        <limit effort="0" lower="-2.965" upper="2.965" velocity="7.85" />
+    </joint>
+
+    <joint name="joint_2" type="revolute">
+        <origin xyz="0.050 0 0" rpy="0 0 0"/>
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 1 0" />
+        <limit effort="0" lower="-1.745329" upper="2.530727" velocity="6.63" />
+    </joint>
+
+    <joint name="joint_3" type="revolute">
+        <origin xyz="0 0 0.330" rpy="0 0 0"/>
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="0 -1 0" />
+        <limit effort="0" lower="-2.450966" upper="4.886922" velocity="9.08" />
+    </joint>
+
+    <joint name="joint_4" type="revolute">
+        <origin xyz="0 0 0.035" rpy="0 0 0"/>
+        <parent link="link_3"/>
+        <child link="link_4"/>
+        <axis xyz="-1 0 0"/>
+        <limit effort="0" lower="-3.315" upper="3.315" velocity="9.60" />
+    </joint>
+
+    <joint name="joint_5" type="revolute">
+        <origin xyz="0.335 0 0" rpy="0 0 0"/>
+        <parent link="link_4"/>
+        <child link="link_5"/>
+        <axis xyz="0 -1 0"/>
+        <limit effort="0" lower="-2.18" upper="2.18" velocity="9.51" />
+    </joint>
+
+    <joint name="joint_6" type="revolute">
+        <origin xyz="0.080 0 0" rpy="0 0 0"/>
+        <parent link="link_5"/>
+        <child link="link_6"/>
+        <axis xyz="-1 0 0"/>
+        <limit effort="0" lower="-6.285" upper="6.285" velocity="17.45" />
+    </joint>
+
+
+    <!-- base -->
+
+    <link name="base" />
+    <joint name="base_link-base" type="fixed">
+        <origin xyz="0 0 0.330" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="base"/>
+    </joint>
+
+    <!-- flange -->
+
+    <link name="flange" />
+    <joint name="joint_6-flange" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="link_6" />
+        <child link="flange" />
+    </joint>
+
+    <!-- tool0 -->
+    <link name="tool0" />
+    <joint name="link_6-tool0" type="fixed">
+        <origin xyz="0 0 0" rpy="3.1415926 -1.5705963265 0" />
+        <parent link="flange" />
+        <child link="tool0" />
+    </joint>
+
+    <!-- Gazebo -->
+
+    <gazebo reference="base">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="link_1">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <gazebo reference="link_2">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <gazebo reference="link_3">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <gazebo reference="link_4">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <gazebo reference="link_5">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <gazebo reference="link_6">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+
+    <!-- Transmissions for ROS Control -->
+    <xacro:macro name="transmission_block" params="joint_name">
+        <transmission name="tran1">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${joint_name}">
+                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor1">
+                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+    </xacro:macro>
+    <!-- Transmissions for ROS Control -->
+    <xacro:transmission_block joint_name="joint_1"/>
+    <xacro:transmission_block joint_name="joint_2"/>
+    <xacro:transmission_block joint_name="joint_3"/>
+    <xacro:transmission_block joint_name="joint_4"/>
+    <xacro:transmission_block joint_name="joint_5"/>
+    <xacro:transmission_block joint_name="joint_6"/>
+
+    <!-- ros_control plugin -->
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/lrmate200id</robotNamespace>
+        </plugin>
+    </gazebo>
+
+</robot>
+
