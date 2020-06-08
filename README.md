@@ -1,0 +1,2 @@
+# lrmate200id_description
+基于ROS Melodic开发的发那科lrmate200id机械臂的Gazebo描述文件。
